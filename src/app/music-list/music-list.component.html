@@ -1,0 +1,11 @@
+<div class="row m-3">
+  <div *ngFor="let music of musics" class="card col-md-4 col-lg-2 col-sm-1" style="width: 18rem;">
+    <img src="{{music.artworkUrl60}}" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{music.artistName}}</h5>
+      <p class="card-text">{{music.artistName}}</p>
+      <a [routerLink]="['/music',music.trackId]" class="btn btn-primary" target="_blank">Voir plus</a>
+    </div>
+
+  </div>
+</div>
